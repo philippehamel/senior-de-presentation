@@ -1,6 +1,5 @@
 ---
 marp: true
-theme: minimalist-dark
 paginate: true
 style: |
   /* Minimalist Dark Theme */
@@ -59,7 +58,7 @@ présentation du projet de monitoring de l'etl d'order item
 
 ### contexte
 
-- infrastructure etl déjà en place chez tm
+- infrastructure etl
   - databrick lakehouse
   - architecture médaillon
   - delta lake pour storage
@@ -87,12 +86,14 @@ présentation du projet de monitoring de l'etl d'order item
 ## problème
 
 - outils de calcul de sli de databricks limité
-- aucune manière de tracker le sli e2e (ie. creation to staging)
+- aucune manière de tracker le sli e2e (ie. creation à requete)
 
 ## solution
 
 - une table de monitoring populée à chacun des stages
   - exposer a prometheus et grafana
+  - detection de bris de slo
+  - alertage
 
 ---
 
