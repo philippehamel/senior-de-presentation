@@ -112,5 +112,5 @@ on se rend compte que le délai ne venais pas de l'etl, mais de la lecture de la
 ## encore meilleure solution
 
 stage de landing en scylla.
-avec mon schema préféré : la 1NF
+avec mon schema préféré :
 aka <b>ONE BIG TABLE</b>
