@@ -32,19 +32,28 @@ présentation du projet de monitoring de l'etl d'order item
 <img src="system.drawio.svg" />
 
 ---
-### schema
+## schema
 <img src="double-star.svg"/>
 
 ---
-### problème
+## problème
 - outils de calcul de sli de databricks limité
 - aucune manière de tracker le sli e2e (ie. creation to staging)
 
-### solution
+## solution
 - une table de monitoring populée à chacun des stages
     - exposer a prometheus et grafana
 
 ---
-### nouveau schema
+## nouveau schema
 <img src="monitoring-table.svg"/>
 
+---
+## résultat
+on se rend compte que le délai ne venais pas de l'etl, mais de la lecture de la base de donnés mysql.
+
+---
+## encore meilleure solution
+poc stage de landing en scylla.
+avec mon schema préféré : la 1NF
+aka <b>ONE BIG TABLE</b>
