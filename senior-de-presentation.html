@@ -176,7 +176,7 @@ hr {
 ;" data-marpit-pagination-total="8">
 <h3 id="contexte">contexte</h3>
 <ul>
-<li>infrastructure etl déjà en place chez tm
+<li>infrastructure etl
 <ul>
 <li>databrick lakehouse</li>
 <li>architecture médaillon</li>
@@ -422,13 +422,15 @@ hr {
 <h2 id="probl%C3%A8me">problème</h2>
 <ul>
 <li>outils de calcul de sli de databricks limité</li>
-<li>aucune manière de tracker le sli e2e (ie. creation to staging)</li>
+<li>aucune manière de tracker le sli e2e (ie. creation à requete)</li>
 </ul>
 <h2 id="solution">solution</h2>
 <ul>
 <li>une table de monitoring populée à chacun des stages
 <ul>
 <li>exposer a prometheus et grafana</li>
+<li>detection de bris de slo</li>
+<li>alertage</li>
 </ul>
 </li>
 </ul>
