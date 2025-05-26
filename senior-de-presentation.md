@@ -52,7 +52,7 @@ présentation du projet de monitoring de l'etl d'order item
 - solution
   - batch_id
   - table
-- encore meilleure solution
+- résultat
 
 ---
 
@@ -64,10 +64,10 @@ présentation du projet de monitoring de l'etl d'order item
   - delta lake pour storage
   - spark pour batch streaming
   - auncun besoin de données historique, upsert pour les changements de dimension
-- staging mysql
+- staging mysql avec accès géré pas spring api
   - <i>row level security</i>
   - integration avec l'authentification de l'api
-  - beaucoup plus rapide
+  - query beaucoup plus rapide que databricks
 
 ---
 
