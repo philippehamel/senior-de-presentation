@@ -80,7 +80,7 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
+;" data-marpit-pagination-total="9">
 <h2 id="ordre-du-jour">ordre du jour</h2>
 <p>présentation du projet de monitoring de l'etl d'order item</p>
 <ul>
@@ -173,7 +173,7 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
+;" data-marpit-pagination-total="9">
 <h3 id="contexte">contexte</h3>
 <ul>
 <li>infrastructure etl
@@ -266,7 +266,7 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
+;" data-marpit-pagination-total="9">
 <h3 id="warehouse">warehouse</h3>
 <img src="system.drawio.png" />
 </section>
@@ -342,9 +342,29 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
-<h2 id="schema">schema</h2>
-<img src="double-star.svg" />
+;" data-marpit-pagination-total="9">
+<h3 id="strat%C3%A9gie-de-test">stratégie de test</h3>
+<ul>
+<li>test ETL
+<ul>
+<li>Unit test pour les transformations (pytest, pyspark.testing)</li>
+<li>test d'integration entre les stages, tester la déduplication</li>
+<li>voulais vrm implémenter great expectation pour data contract, schema, garbage entry (backlogged)</li>
+</ul>
+</li>
+<li>test bd
+<ul>
+<li>data contract et schema</li>
+</ul>
+</li>
+<li>test api
+<ul>
+<li>test fonctionnel (MockMvc)</li>
+<li>test unitaire</li>
+<li>test sécurité</li>
+</ul>
+</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-style="/* Minimalist Dark Theme */
 section {
@@ -418,22 +438,9 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
-<h2 id="probl%C3%A8me">problème</h2>
-<ul>
-<li>outils de calcul de sli de databricks limité</li>
-<li>aucune manière de tracker le sli e2e (ie. creation à requete)</li>
-</ul>
-<h2 id="solution">solution</h2>
-<ul>
-<li>une table de monitoring populée à chacun des stages
-<ul>
-<li>exposer a prometheus et grafana</li>
-<li>detection de bris de slo</li>
-<li>alertage</li>
-</ul>
-</li>
-</ul>
+;" data-marpit-pagination-total="9">
+<h2 id="schema">schema</h2>
+<img src="double-star.svg" />
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-style="/* Minimalist Dark Theme */
 section {
@@ -507,9 +514,22 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
-<h2 id="nouveau-schema">nouveau schema</h2>
-<img src="monitoring-table.svg" />
+;" data-marpit-pagination-total="9">
+<h2 id="probl%C3%A8me">problème</h2>
+<ul>
+<li>outils de calcul de sli de databricks limité</li>
+<li>aucune manière de tracker le sli e2e (ie. creation à requete)</li>
+</ul>
+<h2 id="solution">solution</h2>
+<ul>
+<li>une table de monitoring populée à chacun des stages
+<ul>
+<li>exposer a prometheus et grafana</li>
+<li>detection de bris de slo</li>
+<li>alertage</li>
+</ul>
+</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-style="/* Minimalist Dark Theme */
 section {
@@ -583,9 +603,9 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
-<h2 id="r%C3%A9sultat">résultat</h2>
-<p>on se rend compte que le délai ne venais pas de l'etl, mais de la lecture de la base de donnés mysql.</p>
+;" data-marpit-pagination-total="9">
+<h2 id="nouveau-schema">nouveau schema</h2>
+<img src="monitoring-table.svg" />
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-style="/* Minimalist Dark Theme */
 section {
@@ -659,7 +679,83 @@ footer {
 hr {
   border: 1px solid #333333; /* Subtle horizontal rule */
 }
-;" data-marpit-pagination-total="8">
+;" data-marpit-pagination-total="9">
+<h2 id="r%C3%A9sultat">résultat</h2>
+<p>on se rend compte que le délai ne venais pas de l'etl, mais de la lecture de la base de donnés mysql.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-style="/* Minimalist Dark Theme */
+section {
+  background-color: #1c1c1c; /* Neutral dark gray background */
+  color: #d6d6d6; /* Soft light gray text */
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Pure white headers for contrast */
+  font-weight: bold;
+}
+
+p, li {
+  color: #bfbfbf; /* Softer gray for body text */
+}
+
+code {
+  background-color: #2a2a2a; /* Slightly lighter gray for code blocks */
+  color: #d6ba73; /* Muted gold for code text */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+img {
+  border: none; /* No border around images for a clean look */
+  border-radius: 0; /* No rounding for a minimalist style */
+}
+
+footer {
+  color: #888888; /* Dimmed footer text */
+  font-size: 0.8em;
+}
+
+hr {
+  border: 1px solid #333333; /* Subtle horizontal rule */
+}
+" lang="en-CA" data-marpit-pagination="9" style="--paginate:true;--style:/* Minimalist Dark Theme */
+section {
+  background-color: #1c1c1c; /* Neutral dark gray background */
+  color: #d6d6d6; /* Soft light gray text */
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Pure white headers for contrast */
+  font-weight: bold;
+}
+
+p, li {
+  color: #bfbfbf; /* Softer gray for body text */
+}
+
+code {
+  background-color: #2a2a2a; /* Slightly lighter gray for code blocks */
+  color: #d6ba73; /* Muted gold for code text */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+img {
+  border: none; /* No border around images for a clean look */
+  border-radius: 0; /* No rounding for a minimalist style */
+}
+
+footer {
+  color: #888888; /* Dimmed footer text */
+  font-size: 0.8em;
+}
+
+hr {
+  border: 1px solid #333333; /* Subtle horizontal rule */
+}
+;" data-marpit-pagination-total="9">
 <h2 id="encore-meilleure-solution">encore meilleure solution</h2>
 <p>stage de landing en scylla.<br />
 avec mon schema préféré :<br />

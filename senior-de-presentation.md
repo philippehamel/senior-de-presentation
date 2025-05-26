@@ -77,6 +77,20 @@ présentation du projet de monitoring de l'etl d'order item
 
 ---
 
+### stratégie de test
+- test ETL
+  - Unit test pour les transformations (pytest, pyspark.testing)
+  - test d'integration entre les stages, tester la déduplication
+  - voulais vrm implémenter great expectation pour data contract, schema, garbage entry (backlogged)
+- test bd
+  - data contract et schema
+- test api
+  - test fonctionnel (MockMvc)
+  - test unitaire
+  - test sécurité
+
+---
+
 ## schema
 
 <img src="double-star.svg"/>
